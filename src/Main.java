@@ -18,7 +18,10 @@ public class Main {
                     System.out.println("You win!");
                     System.out.println("Play again? y/n");
                     String answer = newScan.next();
-                    if (answer.equals("n")) {
+                    if (answer.equals("y")) {
+                        randNumber = rand.nextInt(100 + 1);
+                    }
+                    else{
                         break;
                     }
                 }
